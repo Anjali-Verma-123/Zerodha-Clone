@@ -14,206 +14,209 @@ function Footer() {
             />
             <p>&copy; 2010 - 2025, Zerodha Broking Ltd. All rights reserved.</p>
             <div className="mt-3 fs-5">
-  <i className="fa-brands fa-x-twitter me-3"></i>
-  <i className="fa-brands fa-instagram me-3"></i>
-  <i className="fa-brands fa-linkedin me-3"></i>
-  <i className="fa-brands fa-youtube"></i>
-</div>
+              <i className="fa-brands fa-x-twitter me-3"></i>
+              <i className="fa-brands fa-instagram me-3"></i>
+              <i className="fa-brands fa-linkedin me-3"></i>
+              <i className="fa-brands fa-youtube"></i>
+            </div>
           </div>
           <div className="col-lg-2 col-md-6">
             <h5 className="fw-bold mb-3">Account</h5>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Open demat account
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Open demat account
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Miner demat account
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Miner demat account
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-NRI demat account
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              NRI demat account
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Commodity
-</a>
-<a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Dematerialisation
-</a>
-           <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Fund Transfer
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Commodity
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-MTF
-</a>
-<a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Refferal Program
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Dematerialisation
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Fund Transfer
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              MTF
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Refferal Program
+            </a>
           </div>
           <div className="col-lg-2 col-md-6">
-            <h5 className="fw-bold mb-3">Account</h5>
+            <h5 className="fw-bold mb-3">Support</h5>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Contact Us
-</a>
-           <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Support Portal
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Contact Us
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-How to file a Complaint?
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Support Portal
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Status of your Complaint
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              How to file a Complaint?
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Bulletin
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Status of your Complaint
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Circular
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Bulletin
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Z-Contact Blog
-</a>
-<a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Downloads
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Circular
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Z-Contact Blog
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Downloads
+            </a>
           </div>
           <div className="col-lg-2 col-md-6">
-            <h5 className="fw-bold mb-3">Account</h5>
-           <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-About Us
-</a>
-           <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Philosophy
-</a>
+            <h5 className="fw-bold mb-3">Company</h5>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Press & Media
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              About Us
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Careers
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Philosophy
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Zerodha Cares (CSR)
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Press & Media
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Zerodha.Tech
-</a>
-<a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Open Source
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Careers
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Zerodha Cares (CSR)
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Zerodha.Tech
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Open Source
+            </a>
           </div>
           <div className="col-lg-2 col-md-6">
-            <h5 className="fw-bold mb-3">Account</h5>
+            <h5 className="fw-bold mb-3">Resources</h5>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Upcoming IPO's
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Upcoming IPO's
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Brokerage Charges
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Brokerage Charges
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Market Holidays
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Market Holidays
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Economic Calender
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Economic Calender
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Calculator
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Calculator
+            </a>
             <a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Markets
-</a>
-<a
-href=""
-className="text-decoration-none text-secondary d-block mb-2"
->
-Sectors
-</a>
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Markets
+            </a>
+            <a
+              href=""
+              className="text-decoration-none text-secondary d-block mb-2"
+            >
+              Sectors
+            </a>
           </div>
         </div>
-        <div className="mt-5 text-muted" style={{ fontSize: "14px", lineHeight: "1.8" }}>
+        <div
+          className="mt-5 text-muted"
+          style={{ fontSize: "14px", lineHeight: "1.8" }}
+        >
           <p>
             Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration
             no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha
@@ -270,15 +273,33 @@ Sectors
             create a ticket here.
           </p>
           <div className="border-top pt-4 mt-4 d-flex flex-wrap gap-3 justify-content-center">
-            <a href = "" className="text-decoration-none text-secondary">NSE</a>
-            <a href = "" className="text-decoration-none text-secondary">BSE</a>
-            <a href = "" className="text-decoration-none text-secondary">MCX</a>
-            <a href = "" className="text-decoration-none text-secondary">Terms & conditions</a>
-            <a href = "" className="text-decoration-none text-secondary">Policies & procedures</a>
-            <a href = "" className="text-decoration-none text-secondary">Privacy policy</a>
-            <a href = "" className="text-decoration-none text-secondary">Disclosure</a>
-            <a href = "" className="text-decoration-none text-secondary">For investors</a>
-            <a href = "" className="text-decoration-none text-secondary">Investor charter</a>
+            <a href="" className="text-decoration-none text-secondary">
+              NSE
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              BSE
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              MCX
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              Terms & conditions
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              Policies & procedures
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              Privacy policy
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              Disclosure
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              For investors
+            </a>
+            <a href="" className="text-decoration-none text-secondary">
+              Investor charter
+            </a>
           </div>
         </div>
       </div>
