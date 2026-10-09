@@ -4,19 +4,18 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav
-      class="navbar navbar-expand-lg border-bottom "
-      style={{ backgroundCOlor: "#fff" }}
-    >
-      <div class="container p-2">
-        <Link class="navbar-brand" to="/">
+  className="navbar navbar-expand-lg bg-white border-bottom sticky-top shadow-sm"
+>
+      <div className="container py-2">
+        <Link className="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
-            style={{ width: "25%" }}
-            alt="logo"
+            style={{ width: "140px" }}
+            alt="Zerodha logo"
           />
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -24,38 +23,55 @@ function Navbar() {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="d-flex" role="search">
-            <ul class="navbar-nav mb-lg-0">
-              <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/signup">
-                  SignUp
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link class="nav-link active" to="/about">
+        <div
+  className="collapse navbar-collapse justify-content-end"
+  id="navbarSupportedContent"
+>
+          <div>
+            <ul className="navbar-nav align-items-lg-center gap-2">
+              
+              
+              
+              <li className="nav-item">
+                <Link className="nav-link fw-medium" to="/about">
                   About
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link active" to="/products">
-                  Product
+              <li className="nav-item">
+                <Link className="nav-link fw-medium" to="/products">
+                  Products
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link active" to="/pricing">
+              <li className="nav-item">
+                <Link className="nav-link fw-medium" to="/pricing">
                   Pricing
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link active" to="/support">
+              <li className="nav-item">
+                <Link className="nav-link fw-medium" to="/support">
                   Support
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+  className="btn btn-primary rounded-pill px-4 ms-lg-3"
+  to="/signup"
+>
+  Sign Up
+</Link>
+              </li>
+              <li className="nav-item">
+  <Link
+    className="btn btn-outline-primary rounded-pill px-4"
+    to="/login"
+  >
+    Login
+  </Link>
+</li>
             </ul>
-          </form>
+          </div>
         </div>
       </div>
     </nav>

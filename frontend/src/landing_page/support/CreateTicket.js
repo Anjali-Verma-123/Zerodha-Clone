@@ -2,166 +2,345 @@ import React from "react";
 
 function CreateTicket() {
   return (
-    <div className="container">
-      <div className="row p-5 mt-2">
-        <div className="col-4 p-5 mt-2 mb-2">
-          <a href="" className="" style={{ textDecoration: "none" }}>
-            <h5 className="" style={{ color: "black" }}>
-              <i class="fa-solid fa-circle-plus"></i> Account Opening
+    <div className="container py-5">
+      <div className="row g-4">
+        <div className="col-lg-4 col-md-6">
+          <div className="card shadow-sm border-0 h-100 p-4">
+          <a href="" className="text-decoration-none d-block py-2 text-secondary">
+            <h5 className="fw-bold mb-3">
+              <i className="fa-solid fa-circle-plus  me-2 text-primary"></i> Account Opening
             </h5>
           </a>
-          <ul>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Resident individual</li>
+          <ul className="list-unstyled">
+            <li>
+            <a href="" className="text-decoration-none d-block py-2 text-secondary">
+              Resident individual
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Minor</li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Minor
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Non Resident Indian (NRI)</li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Non Resident Indian (NRI)
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Company, Partnership, HUF and LLP</li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Company, Partnership, HUF and LLP
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Glossary</li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Glossary
             </a>
+            </li>
           </ul>
+          </div>
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
-          <a href="" className="" style={{ textDecoration: "none" }}>
-            <h5 className="" style={{ color: "black" }}>
-              <i class="fa-solid fa-user"></i> Your Zerodha Account
+        <div className="col-lg-4 col-md-6">
+          <div className="card shadow-sm border-0 h-100 p-4">
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+            <h5 className="fw-bold mb-3">
+              <i className="fa-solid fa-user  me-2 text-primary"></i> Your Zerodha Account
             </h5>
           </a>
-          <ul>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Your Profile</li>
+          <ul className="list-unstyled">
+             <li>
+             <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Your Profile
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Account modification</li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+          Account modification
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              
                 Client Master Report (CMR) and Depository Participant (DP)
-              </li>
+              
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Nomination</li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Nomination
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Transfer and Conversion of securities</li>
+            </li>
+            <li>
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+            Transfer and Conversion of securities
             </a>
+            </li>
           </ul>
+          </div>
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
-          <a href="" className="" style={{ textDecoration: "none" }}>
-            <h5 className="" style={{ color: "black" }}>
-              <i class="fa-solid fa-kit-medical"></i> Kite
+        <div className="col-lg-4 col-md-6">
+          <div className="card shadow-sm border-0 h-100 p-4">
+            <a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+            <h5 className="fw-bold mb-3">
+              <i className="fa-solid fa-kit-medical  me-2 text-primary"></i> Kite
             </h5>
           </a>
-          <ul>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>IOP</li>
+          <ul className="list-unstyled">
+<li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              IOP
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Trading FAQs</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Trading FAQs
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Margin Trading Facility (MTF) and Margins</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Margin Trading Facility (MTF) and Margins
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Charts and orders</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Charts and orders
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Alerts and Nudges</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Alerts and Nudges
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>General</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              General
             </a>
+            </li>
           </ul>
+          </div>
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
-          <a href="" className="" style={{ textDecoration: "none" }}>
-            <h5 className="" style={{ color: "black" }}>
-              <i class="fa-solid fa-indian-rupee-sign"></i> Funds
+        <div className="col-lg-4 col-md-6">
+          <div className="card shadow-sm border-0 h-100 p-4">
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+            <h5 className="fw-bold mb-3">
+              <i className="fa-solid fa-indian-rupee-sign  me-2 text-primary"></i> Funds
             </h5>
           </a>
-          <ul>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Add Money</li>
+          <ul className="list-unstyled">
+<li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Add Money
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Withdraw money</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Withdraw money
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Add bank accounts</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Add bank accounts
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>eMandates</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+             eMandates
             </a>
+            </li>
           </ul>
+          </div>
         </div>
-        <div className="col-4 p-5 mt-2 mb-2">
-          <a href="" className="" style={{ textDecoration: "none" }}>
-            <h5 className="" style={{ color: "black" }}>
-              <i class="fa-solid fa-terminal"></i> Console
+        <div className="col-lg-4 col-md-6">
+          <div className="card shadow-sm border-0 h-100 p-4">
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+            <h5 className="fw-bold mb-3">
+              <i className="fa-solid fa-terminal  me-2 text-primary"></i> Console
             </h5>
           </a>
-          <ul>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Portfolio</li>
+          <ul className="list-unstyled">
+<li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Portfolio
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Corporate actions</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Corporate actions
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Funds statement</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Funds statement
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Reports</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Reports
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Profile</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+             Profile
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Segments</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Segments
             </a>
+            </li>
           </ul>
+          </div>
         </div>
-        <div className="col-4 p-5 mt-2">
-          <a href="" className="" style={{ textDecoration: "none" }}>
-            <h5 className="" style={{ color: "black" }}>
-              <i class="fa-solid fa-coins"></i> Coin
+        <div className="col-lg-4 col-md-6">
+          <div className="card shadow-sm border-0 h-100 p-4">
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+            <h5 className="fw-bold mb-3">
+              <i className="fa-solid fa-coins  me-2 text-primary"></i> Coin
             </h5>
           </a>
-          <ul>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Mutual funds</li>
+          <ul className="list-unstyled">
+<li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Mutual funds
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>National Pension Scheme (NPS)</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              National Pension Scheme (NPS)
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Features on Coin</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Features on Coin
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>Payments and orders</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              Payments and orders
             </a>
-            <a href="" style={{ textDecoration: "none", lineHeight: "2.5" }}>
-              <li>General</li>
+            </li>
+            <li>
+<a
+href=""
+className="text-decoration-none d-block py-2 text-secondary"
+>
+              General
             </a>
+            </li>
           </ul>
+          </div>
         </div>
       </div>
       <div>
-        <h3 className="border-top  pt-5">Quick links</h3>
-        <ol className="" >
-          <a href="" style={{textDecoration:"none", lineHeight:"2.5"}}><li>Track account opening</li></a>
-          <a href="" style={{textDecoration:"none",  lineHeight:"2.5"}}><li>Track segment activation</li></a>
-          <a href="" style={{textDecoration:"none",  lineHeight:"2.5"}}><li>Intraday margins</li></a>
-          <a href="" style={{textDecoration:"none",  lineHeight:"2.5"}}><li>Kite user manual</li></a>
-          <a href="" style={{textDecoration:"none",  lineHeight:"2.5"}}><li>Learn how to create a ticket</li></a>
+        <h3 className="fw-bold border-top  pt-5 mb-4">Quick links</h3>
+        <ol className="ps-3">
+          <a href="" className="text-decoration-none d-block py-2"><li>Track account opening</li></a>
+          <a href="" className="text-decoration-none d-block py-2"><li>Track segment activation</li></a>
+          <a href="" className="text-decoration-none d-block py-2"><li>Intraday margins</li></a>
+          <a href="" className="text-decoration-none d-block py-2"><li>Kite user manual</li></a>
+          <a href="" className="text-decoration-none d-block py-2"><li>Learn how to create a ticket</li></a>
         </ol>
       </div>
     </div>

@@ -7,6 +7,249 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.hero-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-btn{
+    min-width:220px;
+}
+
+@media (max-width:768px){
+
+.hero-img{
+    width:100%;
+}
+
+.hero-btn{
+    width:100%;
+}
+
+}
+
+.award-img{
+    max-width:100%;
+    height:auto;
+}
+
+.press-logo{
+    max-width:100%;
+}
+
+@media(max-width:768px){
+
+.award-img{
+    margin-bottom:30px;
+}
+
+.press-logo{
+    margin-top:25px;
+}
+
+}
+
+.education-img{
+    max-width:80%;
+    height:auto;
+    transition:0.4s ease;
+}
+
+.education-img:hover{
+    transform:scale(1.03);
+}
+
+@media (max-width:992px){
+
+.education-img{
+    max-width:100%;
+}
+
+}
+
+.pricing-card{
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+    padding:35px 25px;
+    background:#fff;
+    transition:0.3s ease;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+.pricing-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.12);
+}
+
+.pricing-card h1{
+    margin-bottom:20px;
+}
+
+@media(max-width:992px){
+
+.pricing-card{
+    margin-bottom:20px;
+}
+
+}
+
+.stats-image{
+    max-width:90%;
+    height:auto;
+    transition:0.4s ease;
+}
+
+.stats-image:hover{
+    transform:scale(1.03);
+}
+
+@media(max-width:992px){
+
+.stats-image{
+    max-width:100%;
+}
+
+}
+
+.hero-section{
+    padding-top:40px;
+}
+
+.awards-section,
+.stats-section,
+.pricing-section,
+.education-section,
+.open-account-section{
+    padding:80px 0;
+}
+
+@media(max-width:992px){
+
+.awards-section,
+.stats-section,
+.pricing-section,
+.education-section,
+.open-account-section{
+    padding:50px 0;
+}
+
+}
+
+.about-hero{
+    padding-top:40px;
+}
+
+.team-section{
+    padding:80px 0;
+}
+
+@media(max-width:992px){
+
+.about-hero{
+    padding-top:20px;
+}
+
+.team-section{
+    padding:50px 0;
+}
+
+}
+
+.about-text{
+    color:#6c757d;
+    font-size:1.05rem;
+    line-height:1.9;
+    margin-bottom:24px;
+}
+
+@media(max-width:992px){
+
+.about-text{
+    text-align:justify;
+}
+
+}
+
+.team-image{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    transition:.4s ease;
+}
+
+.team-image:hover{
+    transform:scale(1.05);
+}
+
+.team-text{
+    color:#6c757d;
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+@media(max-width:992px){
+
+.team-image{
+    width:220px;
+    height:220px;
+}
+
+.team-text{
+    text-align:justify;
+}
+
+}
+
+.hero-link {
+  color: #387ed1;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-link:hover {
+  color: #1b6bd6;
+  letter-spacing: 0.5px;
+}
+
+.product-link{
+    color:#387ed1;
+    font-weight:600;
+    transition:.3s;
+}
+
+.product-link:hover{
+    color:#1b6bd6;
+    letter-spacing:.5px;
+}
+
+.store-badge img{
+    transition:.3s;
+}
+
+.store-badge img:hover{
+    transform:translateY(-4px);
+}
+
+
+
+.card a:hover{
+    color:#387ed1 !important;
+    padding-left:10px;
+    transition:.3s;
+}
+
+.card{
+transition:.3s;
+border-radius:15px;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 12px 25px rgba(0,0,0,.12)!important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -16,25 +259,89 @@ code {
    margin-left : 40px;
 }
 
-#supportHero{
-  background-color: #F0F0F0;
+
+
+#supportHero {
+  background: linear-gradient(135deg, #387ed1, #2c6fc2);
 }
 
-#supportWrapper{
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
-  margin: 0 150px;
+#supportHero input:focus {
+  box-shadow: none;
+  outline: none;
 }
 
-#supportHero input{
-  padding : 20px 30px;
-  width: 100%;
-  font-size: 16px;
-  border-radius: 5px;
-  border:none;
+#supportHero a {
+  transition: 0.3s;
 }
 
-#supportInput{
-  margin : 10px 170px;
+#supportHero a:hover {
+  color: #ffc107 !important;
 }
+
+#supportHero .btn {
+  transition: 0.3s;
+}
+
+#supportHero .btn:hover {
+  transform: translateY(-2px);
+}
+
+main{
+    background:#f8f9fa;
+}
+
+footer a {
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #387ed1 !important;
+  padding-left: 4px;
+}
+
+footer i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer i:hover {
+  color: #387ed1;
+  transform: translateY(-2px);
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: #444;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #387ed1;
+}
+
+.navbar-brand img {
+  transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn-primary{
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(56,126,209,.3);
+}
+
+

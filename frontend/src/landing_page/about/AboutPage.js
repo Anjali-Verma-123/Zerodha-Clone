@@ -4,10 +4,17 @@ import Team from "./Team";
 
 function AboutPage() {
   return (
-    <>
-      <Hero />
-      <Team />
-    </>
+    <main>
+
+      <section className="about-hero">
+        <Hero />
+      </section>
+
+      <section className="team-section py-5">
+        <Team />
+      </section>
+
+    </main>
   );
 }
 

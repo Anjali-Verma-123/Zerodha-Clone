@@ -13,7 +13,7 @@ const Holdings = () => {
         setLoading(true);
 
         const res = await axios.get(
-          "http://localhost:3002/allHoldings"
+          "https://zerodha-clone-backend-90pv.onrender.com/allHoldings"
         );
 
         setAllHoldings(res.data);

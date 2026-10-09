@@ -2,29 +2,62 @@ import React from "react";
 
 function Education() {
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-6">
-          <img src="media/images/education.svg" style={{ width: "70%" }} />
+    <div className="container py-5">
+
+      <div className="row align-items-center">
+
+      
+
+        <div className="col-lg-6 col-md-12 text-center mb-5 mb-lg-0">
+
+          <img
+            src="media/images/education.svg"
+            alt="Market Education"
+            className="img-fluid education-img"
+          />
+
         </div>
-        <div className="col-6">
-          <h1 className="mb-3 fs-2">Free and open market education</h1>
-          <p>
-            Varsity, the largest online stock market education book in the world
-            covering everything from the basics to advanced trading.
+
+        
+
+        <div className="col-lg-6 col-md-12">
+
+          <h2 className="fw-bold mb-4">
+            Free and Open Market Education
+          </h2>
+
+          <p className="text-muted mb-4">
+            Varsity is the world's largest online stock market education
+            platform, covering everything from investing basics to advanced
+            trading strategies through easy-to-understand lessons.
           </p>
-          <a href="" className="mx-5" style={{ textDecoration: "none" }}>
-            Varsity <i class="fa-solid fa-arrow-right-long"></i>
+
+          <a
+            href="#"
+            className="text-decoration-none fw-semibold"
+          >
+            Varsity
+            <i className="fa-solid fa-arrow-right-long ms-2"></i>
           </a>
-          <p className="mt-5">
-            TradingQ&A, the most active trading and investment community in
-            India for all your market related queries.
+
+          <p className="text-muted mt-5 mb-4">
+            TradingQ&A is India's most active trading and investing community,
+            where you can ask questions, learn from experienced traders, and
+            discuss market-related topics.
           </p>
-          <a href="" className="mx-5" style={{ textDecoration: "none" }}>
-            TradingQ&A <i class="fa-solid fa-arrow-right-long"></i>
+
+          <a
+            href="#"
+            className="text-decoration-none fw-semibold"
+          >
+            TradingQ&A
+            <i className="fa-solid fa-arrow-right-long ms-2"></i>
           </a>
+
         </div>
+
       </div>
+
     </div>
   );
 }

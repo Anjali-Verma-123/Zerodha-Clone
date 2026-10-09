@@ -1,16 +1,17 @@
-import React from 'react';
-import CreateTicket from './CreateTicket';
-import Hero from './Hero';
+import React from "react";
+import Hero from "./Hero";
+import CreateTicket from "./CreateTicket";
 
 function SupportPage() {
-    return ( 
-        <>
-          
-          <Hero/>
-          <CreateTicket/>
-         
-        </>
-     );
+  return (
+    <main>
+      <Hero />
+
+      <section className="py-5">
+        <CreateTicket />
+      </section>
+    </main>
+  );
 }
 
 export default SupportPage;

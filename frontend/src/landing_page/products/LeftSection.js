@@ -10,29 +10,81 @@ function LeftSection({
   appStore,
 }) {
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-6 ">
-          <img src={imageURL} />
+    <section className="container py-5">
+      <div className="row align-items-center gy-5">
+
+        
+        <div className="col-lg-6 text-center">
+          <img
+            src={imageURL}
+            alt={productName}
+            className="img-fluid"
+            style={{ maxWidth: "90%" }}
+          />
         </div>
-        <div className="col-6 p-5 mt-5">
-          <h1>{productName}</h1>
-          <p>{productDescription}</p>
-          <div>
-            <a href={tryDemo}>Try Demo</a>
-            <a href={learnMore} style = {{marginLeft : '50px'}}>Learn More</a>
+
+      
+        <div className="col-lg-6">
+
+          <h2 className="fw-bold mb-4">
+            {productName}
+          </h2>
+
+          <p
+            className="text-muted mb-4"
+            style={{ lineHeight: "1.8" }}
+          >
+            {productDescription}
+          </p>
+
+          
+          <div className="mb-4">
+
+            <a
+              href={tryDemo}
+              className="text-decoration-none fw-semibold me-4"
+            >
+              Try Demo{" "}
+              <i className="fa-solid fa-arrow-right-long ms-1"></i>
+            </a>
+
+            <a
+              href={learnMore}
+              className="text-decoration-none fw-semibold"
+            >
+              Learn More{" "}
+              <i className="fa-solid fa-arrow-right-long ms-1"></i>
+            </a>
+
           </div>
-          <div className = 'mt-3'>
+
+          
+          <div className="d-flex flex-wrap gap-3">
+
             <a href={googlePlay}>
-              <img src="media/images/googlePlayBadge.svg" />
+              <img
+                src="media/images/googlePlayBadge.svg"
+                alt="Google Play"
+                className="img-fluid"
+                style={{ height: "50px" }}
+              />
             </a>
+
             <a href={appStore}>
-              <img src="media/images/appstoreBadge.svg" style = {{marginLeft : '50px'}}/>
+              <img
+                src="media/images/appstoreBadge.svg"
+                alt="App Store"
+                className="img-fluid"
+                style={{ height: "50px" }}
+              />
             </a>
+
           </div>
+
         </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 

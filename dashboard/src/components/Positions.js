@@ -12,7 +12,7 @@ const Positions = () => {
         setLoading(true);
 
         const res = await axios.get(
-          "http://localhost:3002/allPositions"
+          "https://zerodha-clone-backend-90pv.onrender.com/allPositions"
         );
 
         setAllPositions(res.data);

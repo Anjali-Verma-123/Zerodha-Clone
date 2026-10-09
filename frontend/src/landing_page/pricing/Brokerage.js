@@ -2,79 +2,114 @@ import React from "react";
 
 function Brokerage() {
   return (
-    <div className="container">
-      <div className="row p-5 mt-5 text-center border-top">
-        <div className="col-6 p-4 ">
-          <a href="" style={{ textDecoration: "none" }}>
-            <h2>Brokerage calculator</h2>
-          </a>
-          <ul
-            style={{ textAlign: "left", lineHeight: "2.5", fontSize: "14px" }}
-            className="text-muted "
-          >
-            <li>
-              Call & Trade and RMS auto-squareoff:Additional charges of 50rupees
-              + GST per order.
-            </li>
-            <li>Digital contract notes will be sent via e-mail.</li>
-            <li>
-              Physical copies of contract notes, if required, shall be charged
-              20rupees per contract note. Courier charges apply.
-            </li>
-            <li>
-              For NRI account (non-PIS), 0.5% or 100rupees per executed order
-              for equity (whichever is lower).
-            </li>
-            <li>
-              For NRI account (PIS), 0.5% or 200rupees per executed order for
-              equity (whichever is lower).
-            </li>
-            <li>
-              If the account is in debit balance, any order placed will be
-              changed 40rupees per executed order instead of 20rupees per
-              executed order.
-            </li>
-          </ul>
-        </div>
-        <div className="col-6 p-4">
-          <a href="" style={{ textDecoration: "none" }}>
-            <h2>List of charges</h2>
-          </a>
-          <ul
-            style={{ textAlign: "left", lineHeight: "2.5", fontSize: "14px" }}
-            className="text-muted "
-          >
-            <li>
-              Charged by exchanges (NSE, BSE, MCX) on the value of your
-              transactions.
-            </li>
-
-            <li>
-              BSE has revised transaction charges in XC, XD, XT, Z and ZP groups
-              to ₹10,000 per crore w.e.f 01.01.2016. (XC and XD groups have been
-              merged into a new group X w.e.f 01.12.2017)
-            </li>
-
-            <li>
-              BSE has revised transaction charges in SS and ST groups to
-              ₹1,00,000 per crore of gross turnover.
-            </li>
-
-            <li>
-              BSE has revised transaction charges for group A, B and other non
-              exclusive scrips (non-exclusive scrips from group E, F, FC, G, GC,
-              W, T) at ₹375 per crore of turnover on flat rate basis w.e.f.
-              December 1, 2022.
-            </li>
-
-            <li>
-              BSE has revised transaction charges in M, MT, TS and MS groups to
-              ₹275 per crore of gross turnover.
-            </li>
-          </ul>
-        </div>
+    <section className="container py-5">
+      <div className="text-center mb-5">
+        <h2 className="fw-bold">Brokerage & Charges</h2>
+        <p className="text-muted">
+          Everything you need to know about our brokerage and other charges.
+        </p>
       </div>
-    </div>
+
+      <div className="row g-4">
+
+       
+
+        <div className="col-lg-6 col-12">
+          <div
+            className="shadow-sm p-4 h-100 rounded-4 border"
+            style={{ background: "#fff" }}
+          >
+            <h4 className="mb-4 text-primary">
+              Brokerage Calculator
+            </h4>
+
+            <ul
+              className="text-muted"
+              style={{
+                lineHeight: "2",
+                paddingLeft: "20px",
+              }}
+            >
+              <li>
+                Call & Trade and RMS auto square-off:
+                ₹50 + GST per order.
+              </li>
+
+              <li>
+                Digital contract notes are sent via email.
+              </li>
+
+              <li>
+                Physical contract notes (if required) are charged
+                ₹20 per note + courier charges.
+              </li>
+
+              <li>
+                NRI (Non-PIS): 0.5% or ₹100 per executed order,
+                whichever is lower.
+              </li>
+
+              <li>
+                NRI (PIS): 0.5% or ₹200 per executed order,
+                whichever is lower.
+              </li>
+
+              <li>
+                Debit balance accounts are charged ₹40 instead
+                of ₹20 per executed order.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        
+
+        <div className="col-lg-6 col-12">
+          <div
+            className="shadow-sm p-4 h-100 rounded-4 border"
+            style={{ background: "#fff" }}
+          >
+            <h4 className="mb-4 text-primary">
+              List of Charges
+            </h4>
+
+            <ul
+              className="text-muted"
+              style={{
+                lineHeight: "2",
+                paddingLeft: "20px",
+              }}
+            >
+              <li>
+                Exchange transaction charges are levied by
+                NSE, BSE and MCX.
+              </li>
+
+              <li>
+                BSE revised transaction charges for multiple
+                trading groups from time to time.
+              </li>
+
+              <li>
+                Charges for SS and ST groups are ₹1,00,000
+                per crore turnover.
+              </li>
+
+              <li>
+                Group A, B and other non-exclusive scrips
+                are charged ₹375 per crore turnover.
+              </li>
+
+              <li>
+                M, MT, TS and MS groups are charged
+                ₹275 per crore turnover.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
   );
 }
 

@@ -24,7 +24,7 @@ const handleBuyClick = async () => {
 }
   try {
     setLoading(true);
-    await axios.post("http://localhost:3002/newOrder", {
+    await axios.post("https://zerodha-clone-backend-90pv.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,
