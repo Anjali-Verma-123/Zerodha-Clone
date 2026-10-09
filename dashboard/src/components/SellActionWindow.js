@@ -9,23 +9,29 @@ import "./BuyActionWindow.css";
 const SellActionWindow = ({ uid }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
+  const [loading, setLoading] = useState(false);
 
   const { closeSellWindow } = useContext(GeneralContext);
 
   const handleSellClick = async () => {
-    try {
-      await axios.post("http://localhost:3002/newOrder", {
-        name: uid,
-        qty: stockQuantity,
-        price: stockPrice,
-        mode: "SELL",
-      });
+  try {
+    setLoading(true);
 
-      closeSellWindow();
-    } catch (err) {
-      console.error(err);
-    }
-  };
+    await axios.post("http://localhost:3002/newOrder", {
+      name: uid,
+      qty: Number(stockQuantity),
+      price: Number(stockPrice),
+      mode: "SELL",
+    });
+
+    closeSellWindow();
+  } catch (err) {
+    console.error(err);
+    alert("Unable to place sell order");
+  } finally {
+    setLoading(false);
+  }
+};
 
   const handleCancelClick = () => {
     closeSellWindow();
@@ -62,12 +68,13 @@ const SellActionWindow = ({ uid }) => {
         <span>Margin required ₹140.65</span>
 
         <div>
-          <button
-            className="btn btn-blue"
-            onClick={handleSellClick}
-          >
-            Sell
-          </button>
+         <button
+  className="btn btn-blue"
+  onClick={handleSellClick}
+  disabled={loading}
+>
+  {loading ? "Selling..." : "Sell"}
+</button>
 
           <button
             className="btn btn-grey"

@@ -11,8 +11,42 @@ import {
 } from "@mui/icons-material";
 
 import { watchlist } from "../data/data";
+import DoughnoutChart from "./DoughnoutChart";
+
+const labels = watchlist.map((subArray) => subArray["name"]);
 
 const WatchList = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const filteredWatchlist = watchlist.filter((stock) =>
+  stock.name.toLowerCase().includes(searchTerm.toLowerCase())
+);
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Price",
+        data: watchlist.map((stock) => stock.price),
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.5)",
+          "rgba(54, 162, 235, 0.5)",
+          "rgba(255, 206, 86, 0.5)",
+          "rgba(75, 192, 192, 0.5)",
+          "rgba(153, 102, 255, 0.5)",
+          "rgba(255, 159, 64, 0.5)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
+
   return (
     <div className="watchlist-container">
       <div className="search-container">
@@ -20,17 +54,27 @@ const WatchList = () => {
           type="text"
           name="search"
           id="search"
-          placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
+          placeholder="Search stocks....."
           className="search"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <span className="counts"> {watchlist.length} / 50</span>
+        <span className="counts"> {filteredWatchlist.length} / 50</span>
       </div>
 
       <ul className="list">
-        {watchlist.map((stock, index) => {
-          return <WatchListItem stock={stock} key={index} />;
-        })}
-      </ul>
+  {filteredWatchlist.length > 0 ? (
+    filteredWatchlist.map((stock) => (
+      <WatchListItem stock={stock} key={stock.name} />
+    ))
+  ) : (
+    <p className="text-center text-muted mt-4">
+      No stocks found
+    </p>
+  )}
+</ul>
+
+      <DoughnoutChart data={data} />
     </div>
   );
 };
@@ -40,11 +84,11 @@ export default WatchList;
 const WatchListItem = ({ stock }) => {
   const [showWatchlistActions, setShowWatchlistActions] = useState(false);
 
-  const handleMouseEnter = (e) => {
+  const handleMouseEnter = () => {
     setShowWatchlistActions(true);
   };
 
-  const handleMouseLeave = (e) => {
+  const handleMouseLeave = () => {
     setShowWatchlistActions(false);
   };
 
@@ -68,7 +112,7 @@ const WatchListItem = ({ stock }) => {
 };
 
 const WatchListActions = ({ uid }) => {
-  const { openBuyWindow, openSellWindow} = useContext(GeneralContext);
+  const { openBuyWindow, openSellWindow } = useContext(GeneralContext);
   return (
     <span className="actions">
       <span>

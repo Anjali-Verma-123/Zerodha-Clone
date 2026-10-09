@@ -13,6 +13,7 @@ const BuyActionWindow = ({ uid }) => {
 
 const [stockQuantity, setStockQuantity] = useState(1);
 const [stockPrice, setStockPrice] = useState(0.0);
+const [loading, setLoading] = useState(false);
 
 // const handleBuyClick = () => {
 //   axios.post("http://localhost:3002/newOrder", {
@@ -26,7 +27,12 @@ const [stockPrice, setStockPrice] = useState(0.0);
 
 const { closeBuyWindow } = useContext(GeneralContext);
 const handleBuyClick = async () => {
+  if (stockQuantity <= 0 || stockPrice <= 0) {
+    alert("Enter valid quantity and price");
+    return;
+}
   try {
+    setLoading(true);
     await axios.post("http://localhost:3002/newOrder", {
       name: uid,
       qty: stockQuantity,
@@ -34,9 +40,14 @@ const handleBuyClick = async () => {
       mode: "BUY",
     });
 
+     alert("Order placed successfully!");
+
     closeBuyWindow(); // Buy hone ke baad window band
   } catch (err) {
     console.error(err);
+    alert("Failed to place order.");
+  }finally{
+    setLoading(false);
   }
 };
 const handleCancelClick = () => {
@@ -53,7 +64,8 @@ const handleCancelClick = () => {
               type="number"
               name="qty"
               id="qty"
-              onChange={(e) => setStockQuantity(e.target.value)}
+              min="1"
+              onChange={(e) => setStockQuantity(Number(e.target.value))}
               value={stockQuantity}
             />
           </fieldset>
@@ -64,26 +76,29 @@ const handleCancelClick = () => {
               name="price"
               id="price"
               step="0.05"
-              onChange={(e) => setStockPrice(e.target.value)}
+              min="0"
+              onChange={(e) => setStockPrice(Number(e.target.value))}
               value={stockPrice}
             />
           </fieldset>
         </div>
        </div>
         <div className="buttons">
-          <span>Margin required ₹140.65</span>
+          <span>Margin required ₹ {(stockQuantity * stockPrice).toFixed(2)}</span>
           <div>
-            <Link
-              className="btn btn-blue" onClick={handleBuyClick}>
-              Buy
-            </Link>
-            <Link
-              to=""
-              className="btn btn-grey"
-              onClick={handleCancelClick}
-            >
-              Cancel
-            </Link>
+            <button
+  className="btn btn-blue"
+  onClick={handleBuyClick}
+>
+  Buy
+</button>
+
+<button
+  className="btn btn-grey"
+  onClick={handleCancelClick}
+>
+  Cancel
+</button>
           </div>
         </div>
       </div>

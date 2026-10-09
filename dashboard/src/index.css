@@ -843,4 +843,221 @@ hr {
   background-color: rgb(212, 212, 212);
 }
 
+.content{
+    flex:1;
+    padding:25px;
+    overflow-y:auto;
+    background:#f8f9fa;
+}
+
+.dashboard-container{
+    display:flex;
+    min-height:100vh;
+}
+
+.watchlist-container{
+    width:320px;
+    border-right:1px solid #eee;
+}
+
+@media(max-width:992px){
+
+.dashboard-container{
+    flex-direction:column;
+}
+
+.watchlist-container{
+    width:100%;
+}
+
+.content{
+    width:100%;
+}
+
+}
+
+.funds{
+    margin:20px;
+}
+
+@media(max-width:768px){
+
+.funds{
+    text-align:center;
+}
+
+.funds .btn{
+    width:100%;
+    margin-top:12px;
+}
+
+.funds .btn + .btn{
+    margin-left:0!important;
+}
+
+.card{
+    margin-bottom:20px;
+}
+
+.table-responsive{
+    font-size:14px;
+}
+
+}
+
+.holdings-table-head th {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 16px 18px;
+  border-bottom: 1px solid #e9ecef;
+  white-space: nowrap;
+}
+
+.holding-row {
+  transition: all 0.2s ease;
+}
+
+.holding-row td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 14px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.holding-row:hover {
+  background-color: #f8fbff;
+}
+
+.holding-row:last-child td {
+  border-bottom: none;
+}
+
+.profit {
+  color: #198754;
+  font-weight: 600;
+}
+
+.loss {
+  color: #dc3545;
+  font-weight: 600;
+}
+
+.positions-page {
+  padding: 32px;
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+.positions-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+.positions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.positions-table thead {
+  background: #f8fafc;
+}
+
+.positions-table th {
+  padding: 16px 20px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.positions-table td {
+  padding: 18px 20px;
+  font-size: 14px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  white-space: nowrap;
+}
+
+.positions-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.positions-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.positions-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.positions-table .instrument-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+.positions-table .profit {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.positions-table .loss {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.product-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #eef2ff;
+  color: #4f46e5;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .positions-page {
+    padding: 16px;
+  }
+
+  .positions-card {
+    border-radius: 12px;
+  }
+
+  .positions-table th,
+  .positions-table td {
+    padding: 14px 16px;
+  }
+}
+
+.search {
+  color: #212529 !important;          /* typed text dark */
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}
+
+.search::placeholder {
+  color: #8a8f98;                     /* placeholder slightly light */
+  opacity: 1;
+}
+
+.search:focus {
+  color: #111827 !important;
+  border-color: #387ed1;
+  box-shadow: 0 0 0 3px rgba(56, 126, 209, 0.15);
+  background-color: #ffffff;
+}
+
 

@@ -1,10 +1,13 @@
 import React from "react";
 
 const Summary = () => {
+  const user = JSON.parse(localStorage.getItem("user") || "{}");
   return (
-    <>
+    <div className="container-fluid px-3 px-md-4 py-4">
       <div className="username">
-        <h6>Hi, User!</h6>
+        <h4 className="fw-bold">
+  Hi, {user?.name || "User"}! 👋
+</h4>
         <hr className="divider" />
       </div>
 
@@ -57,7 +60,7 @@ const Summary = () => {
         </div>
         <hr className="divider" />
       </div>
-    </>
+    </div>
   );
 };
 
