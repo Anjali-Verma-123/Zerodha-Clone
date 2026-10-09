@@ -12,6 +12,7 @@ const BuyActionWindow = ({ uid }) => {
 
 const [stockQuantity, setStockQuantity] = useState(1);
 const [stockPrice, setStockPrice] = useState(0.0);
+const [, setLoading] = useState(false);
 
 
 
